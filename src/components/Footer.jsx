@@ -128,7 +128,7 @@ const Footer = () => {
         <div className="section-container py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <div>
-              <p>© 2025 AIQuantalytics. All rights reserved.</p>
+            <p>© 2025 AIQuantalytics. All rights reserved.</p>
               <p className="text-xs mt-1">Designed & Developed by Karan</p>
             </div>
             <div className="flex gap-6">

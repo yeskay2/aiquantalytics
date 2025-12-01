@@ -46,14 +46,14 @@ const Contact = () => {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1500))
       
-      console.log('Form submitted:', formData)
+    console.log('Form submitted:', formData)
       
       setSubmitStatus({
         type: 'success',
         message: 'Thank you for contacting us! We will get back to you soon.'
       })
       
-      setFormData({ name: '', phone: '', email: '', message: '' })
+    setFormData({ name: '', phone: '', email: '', message: '' })
     } catch (error) {
       setSubmitStatus({
         type: 'error',
@@ -235,8 +235,8 @@ const Contact = () => {
                 </motion.div>
               )}
 
-              <button
-                type="submit"
+                    <button
+                      type="submit"
                 disabled={isSubmitting}
                 className={`w-full px-8 py-4 bg-gradient-to-r from-[#1f4037] to-[#99f2c8] text-white font-semibold rounded-xl hover:shadow-xl transition-all shadow-lg ${
                   isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
@@ -253,7 +253,7 @@ const Contact = () => {
                 ) : (
                   'Send Message'
                 )}
-              </button>
+                    </button>
             </form>
           </motion.div>
         </div>

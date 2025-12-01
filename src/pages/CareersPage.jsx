@@ -64,7 +64,7 @@ const CareersPage = () => {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 2000))
       
-      console.log('Career form submitted:', formData)
+    console.log('Career form submitted:', formData)
       
       setSubmitStatus({
         type: 'success',
@@ -72,16 +72,16 @@ const CareersPage = () => {
       })
       
       // Reset form
-      setFormData({
-        name: '',
-        phone: '',
-        email: '',
-        degree: '',
-        position: 'Web Designer',
-        experience: '',
-        details: '',
-        resume: null
-      })
+    setFormData({
+      name: '',
+      phone: '',
+      email: '',
+      degree: '',
+      position: 'Web Designer',
+      experience: '',
+      details: '',
+      resume: null
+    })
       
       // Reset file input
       const fileInput = document.querySelector('input[type="file"]')
@@ -297,8 +297,8 @@ const CareersPage = () => {
               )}
 
               {/* Submit Button */}
-              <button
-                type="submit"
+                <button
+                  type="submit"
                 disabled={isSubmitting}
                 className={`w-full px-8 py-4 bg-gradient-to-r from-[#1f4037] to-[#99f2c8] text-white font-semibold rounded-xl hover:shadow-xl transition-all shadow-lg ${
                   isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
@@ -315,7 +315,7 @@ const CareersPage = () => {
                 ) : (
                   'Submit Application'
                 )}
-              </button>
+                </button>
             </form>
           </div>
         </div>

@@ -74,8 +74,8 @@ const Contact = () => {
     {
       icon: HiPhone,
       title: 'Phone',
-      content: '+91-9791306877',
-      link: 'tel:+919791306877'
+      content: '+91-7010737331',
+      link: 'tel:+917010737331'
     },
     {
       icon: HiLocationMarker,

@@ -33,8 +33,8 @@ const Admission = () => {
     location: 'Hopes, Coimbatore',
   }
 
-  // Replace this URL with your actual Google Form URL
-  const googleFormUrl = 'https://forms.google.com/YOUR_FORM_ID'
+  // Google Form URL for course registration
+  const googleFormUrl = 'https://forms.gle/SHw6nhoP8AFoUWeWA'
 
   return (
     <section id="admission" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-gray-50 to-white">

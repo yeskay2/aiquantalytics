@@ -90,7 +90,13 @@ const About = () => {
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="px-8 py-3 bg-gradient-to-r from-[#1f4037] to-[#99f2c8] text-white font-semibold rounded-full hover:shadow-xl transition-all shadow-lg"
+              onClick={() => {
+                const element = document.querySelector('#team')
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              }}
+              className="px-8 py-3 bg-gradient-to-r from-[#1f4037] to-[#99f2c8] text-white font-semibold rounded-full hover:shadow-xl transition-all shadow-lg cursor-pointer"
             >
               Learn More About Us
             </motion.button>

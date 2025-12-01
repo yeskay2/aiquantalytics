@@ -17,6 +17,7 @@ const Footer = () => {
     ],
     resources: [
       { name: 'Products', path: '/#products' },
+      { name: 'Admission', path: '/#admission' },
       { name: 'Careers', path: '/careers' },
       { name: 'Contact', path: '/#contact' },
       { name: 'FAQ', path: '/#faq' },
@@ -126,7 +127,10 @@ const Footer = () => {
       <div className="border-t border-dark-800">
         <div className="section-container py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            <p>© 2025 AIQuantalytics. All rights reserved.</p>
+            <div>
+              <p>© 2025 AIQuantalytics. All rights reserved.</p>
+              <p className="text-xs mt-1">Designed & Developed by Karan</p>
+            </div>
             <div className="flex gap-6">
               <a href="#" className="hover:text-[#99f2c8] transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-[#99f2c8] transition-colors">Terms of Service</a>

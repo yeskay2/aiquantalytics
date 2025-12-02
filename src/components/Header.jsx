@@ -25,9 +25,8 @@ const Header = () => {
     { name: 'About', path: '/', hash: '#about' },
     { name: 'Services', path: '/', hash: '#services' },
     { name: 'Products', path: '/', hash: '#products' },
-    { name: 'Admission', path: '/', hash: '#registration' },
-    { name: 'Team', path: '/', hash: '#team' },
     { name: 'Registration', path: '/', hash: '#registration' },
+    { name: 'Team', path: '/', hash: '#team' },
     { name: 'Contact', path: '/', hash: '#contact' },
     { name: 'FAQ', path: '/', hash: '#faq' },
   ]
@@ -53,7 +52,7 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center py-2">
+          <Link to="/" className="flex items-center py-2 -ml-1 sm:-ml-2 lg:-ml-6">
             <img 
               src="/images/logo.png" 
               alt="AIQuantalytics" 

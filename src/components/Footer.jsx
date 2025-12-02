@@ -52,14 +52,7 @@ const Footer = () => {
               >
                 <FaLinkedin size={18} />
               </a>
-              <a
-                href="https://www.instagram.com/aiquantalytics?igsh=eWNiZnY4OHpmZDc2"
-                target="_blank"
-                rel="noopener noreferrer"
-                  className="w-10 h-10 bg-dark-800 hover:bg-gradient-to-r hover:from-[#1f4037] hover:to-[#99f2c8] rounded-full flex items-center justify-center transition-all"
-              >
-                <FaInstagram size={18} />
-              </a>
+        
             </div>
           </div>
 
@@ -99,7 +92,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Info + Video */}
-        <div className="mt-12 pt-8 border-t border-dark-800 grid md:grid-cols-2 gap-10 md:gap-12 items-start md:items-center">
+        <div className="mt-1 pt-3 border-t border-dark-800 grid md:grid-cols-2 gap-10 md:gap-12 items-start md:items-center">
           {/* Address */}
           <div>
             <h5 className="font-semibold text-sm text-white mb-2">Office Address</h5>
@@ -109,6 +102,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-sm text-gray-400 hover:text-[#99f2c8] transition-colors block"
             >
+              AIQuantalytics<br />
               78B Lakshmi Puram, 6th Street<br />
               Masakalipalayam Road, Hopes College<br />
               Peelamedu, 641004, Coimbatore, India
@@ -130,7 +124,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-4 text-sm text-gray-400">
+        <div className="mt-1 text-sm text-gray-400">
           <p>Phone: <a href="tel:+917010737331" className="hover:text-[#99f2c8] transition-colors">+91-7010737331</a></p>
           <p>Email: <a href="mailto:hr@aiquantalytics.in" className="hover:text-[#99f2c8] transition-colors">hr@aiquantalytics.in</a></p>
         </div>

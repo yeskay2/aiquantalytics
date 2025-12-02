@@ -13,8 +13,8 @@ const Team = () => {
   const leadership = [
     {
       name: 'Mrs. G Handini',
-      role: 'Chief Executive Officer',
-      subtitle: 'Founder',
+      role: 'Managing Director',
+      subtitle: null, 
       image: '/images/handini.png',
       email: 'hr@aiquantalytics.in',
       linkedin: null
@@ -22,7 +22,7 @@ const Team = () => {
     {
       name: 'Mr. Shreyanth S',
       role: 'Chief Technology Officer',
-      subtitle: 'Co-Founder',
+      subtitle: null,
       image: '/images/shreyanth.png',
       email: 'cto@aiquantalytics.in',
       linkedin: 'https://www.linkedin.com/in/shreyanth07/'
@@ -30,19 +30,19 @@ const Team = () => {
     {
       name: 'Mr. Nishanth J',
       role: 'Chief Operations Officer',
-      subtitle: 'Co-Founder',
+      subtitle: null,
       image: '/images/nishanth.png',
       email: 'coo@aiquantalytics.in',
       linkedin: 'https://www.linkedin.com/in/nishanth-jayaram-23a04011a/'
     },
-    {
+    /*{
       name: 'Mr. Shyam Sundar G',
       role: 'Chief Strategist Officer',
-      subtitle: 'Co-Founder',
+      subtitle: null,
       image: '/images/shyam.png',
       email: 'cso@aiquantalytics.in',
       linkedin: 'https://www.linkedin.com/in/shyam-sundhar-771a6220a/'
-    },
+    }*/
   ]
 
   return (
@@ -70,14 +70,14 @@ const Team = () => {
         </motion.div>
 
         {/* Leadership Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto justify-items-center">
           {leadership.map((member, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="glow-card group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300"
+              className="glow-card group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 w-full max-w-sm"
             >
               {/* Image Container */}
               <div className="relative overflow-hidden aspect-square bg-gray-50">
@@ -113,16 +113,18 @@ const Team = () => {
               </div>
 
               {/* Content */}
-              <div className="p-4 sm:p-6 text-center bg-white">
+              <div className="p-4 sm:p-6 text-center bg-white w-full">
                 <h3 className="text-base sm:text-lg font-bold text-dark-900 mb-1.5 sm:mb-2 leading-tight">
                   {member.name}
                 </h3>
-                <p className="text-xs sm:text-sm font-semibold bg-gradient-to-r from-[#1f4037] to-[#99f2c8] bg-clip-text text-transparent mb-1 sm:mb-1.5 leading-snug">
+                <p className="text-xs sm:text-sm font-semibold bg-gradient-to-r from-[#1f4037] to-[#99f2c8] bg-clip-text text-transparent leading-snug">
                   {member.role}
                 </p>
-                <p className="text-[10px] sm:text-xs text-dark-500 uppercase tracking-widest font-medium">
-                  {member.subtitle}
-                </p>
+                {member.subtitle && (
+                  <p className="text-[10px] sm:text-xs text-dark-500 uppercase tracking-widest font-medium mt-1">
+                    {member.subtitle}
+                  </p>
+                )}
               </div>
             </motion.div>
           ))}

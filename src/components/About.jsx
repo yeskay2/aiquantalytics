@@ -44,8 +44,8 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="absolute -bottom-6 -right-6 bg-gradient-to-r from-[#1f4037] to-[#99f2c8] text-white px-6 py-4 rounded-2xl shadow-xl"
             >
-              <div className="text-3xl font-bold">22+</div>
-              <div className="text-sm opacity-90">University Partners</div>
+              <div className="text-3xl font-bold">100+</div>
+              <div className="text-sm opacity-90">Academic Partners</div>
             </motion.div>
           </motion.div>
 

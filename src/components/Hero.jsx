@@ -46,7 +46,7 @@ const Hero = () => {
         {/* Slide 1 - Innovate, Automate & Transform */}
         <div className={`frame frame_1 absolute inset-0 transition-opacity duration-700 ${currentSlide === 1 ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}>
           <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#1f4037] to-[#99f2c8]">
-            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 sm:pt-24 pb-24 sm:pb-32 text-center">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 sm:py-16 text-center">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ const Hero = () => {
                 </h1>
 
                 {/* Subheading */}
-                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4 drop-shadow">
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 mb-10 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-4 drop-shadow">
                   Your Development Partner in AIML/Gen AI, LLM, Agentic AI, Data Science, NLP, Cloud and Big Data, DevOps, MLOps, and More. Contact Us Today!
                 </p>
 
@@ -88,25 +88,25 @@ const Hero = () => {
                       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
                     }
                   }}
-                  className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-10 py-3 sm:py-4 bg-white text-dark-900 text-base sm:text-lg font-semibold rounded-full hover:bg-gray-100 transition-all shadow-xl cursor-pointer"
+                  className="inline-flex items-center gap-2 sm:gap-3 px-8 sm:px-12 py-4 sm:py-5 bg-white text-dark-900 text-base sm:text-lg font-semibold rounded-full hover:bg-gray-100 transition-all shadow-xl cursor-pointer"
                 >
                   Contact Now
                   <HiArrowRight className="text-lg sm:text-2xl" />
                 </motion.button>
 
                 {/* Stats - Visible Below Button */}
-                <div className="flex flex-wrap justify-center gap-6 sm:gap-10 mt-8 sm:mt-10 mb-12 sm:mb-16 text-sm sm:text-base text-white px-4">
-                  <div className="flex items-center gap-2 no-underline">
-                    <span className="text-2xl sm:text-3xl font-bold text-white no-underline">203+</span>
-                    <span className="text-white font-medium no-underline">Projects</span>
+                <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 lg:gap-10 mt-10 sm:mt-12 text-sm sm:text-base text-white px-4">
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">203+</span>
+                    <span className="text-white font-medium whitespace-nowrap">Projects</span>
                   </div>
-                  <div className="flex items-center gap-2 no-underline">
-                    <span className="text-2xl sm:text-3xl font-bold text-white no-underline">90+</span>
-                    <span className="text-white font-medium no-underline">Happy Clients</span>
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">90+</span>
+                    <span className="text-white font-medium whitespace-nowrap">Happy Clients</span>
                   </div>
-                  <div className="flex items-center gap-2 no-underline">
-                    <span className="text-2xl sm:text-3xl font-bold text-white no-underline">4+</span>
-                    <span className="text-white font-medium no-underline">Years</span>
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">4+</span>
+                    <span className="text-white font-medium whitespace-nowrap">Years</span>
                   </div>
                 </div>
               </motion.div>
@@ -117,7 +117,7 @@ const Hero = () => {
         {/* Slide 2 - Data & Analytics */}
         <div className={`frame frame_2 absolute inset-0 transition-opacity duration-700 ${currentSlide === 2 ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}>
           <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700">
-            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 sm:pt-24 pb-24 sm:pb-32 text-center">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 sm:py-16 text-center">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -145,7 +145,7 @@ const Hero = () => {
                 </h1>
 
                 {/* Subheading */}
-                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4 drop-shadow">
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 mb-10 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-4 drop-shadow">
                   Unlock the power of your data with AI Quantalytics. Advanced analytics, machine learning, and business intelligence solutions that drive real results.
                 </p>
 
@@ -159,25 +159,25 @@ const Hero = () => {
                       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
                     }
                   }}
-                  className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-10 py-3 sm:py-4 bg-white text-dark-900 text-base sm:text-lg font-semibold rounded-full hover:bg-gray-100 transition-all shadow-xl cursor-pointer"
+                  className="inline-flex items-center gap-2 sm:gap-3 px-8 sm:px-12 py-4 sm:py-5 bg-white text-dark-900 text-base sm:text-lg font-semibold rounded-full hover:bg-gray-100 transition-all shadow-xl cursor-pointer"
                 >
                   Explore Solutions
                   <HiArrowRight className="text-lg sm:text-2xl" />
                 </motion.button>
 
                 {/* Data Stats */}
-                <div className="flex flex-wrap justify-center gap-6 sm:gap-10 mt-8 sm:mt-10 mb-12 sm:mb-16 text-sm sm:text-base text-white px-4">
-                  <div className="flex items-center gap-2 no-underline">
-                    <span className="text-2xl sm:text-3xl font-bold text-white no-underline">10TB+</span>
-                    <span className="text-white font-medium no-underline">Data Processed</span>
+                <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 lg:gap-10 mt-10 sm:mt-12 text-sm sm:text-base text-white px-4">
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">10TB+</span>
+                    <span className="text-white font-medium whitespace-nowrap">Data Processed</span>
                   </div>
-                  <div className="flex items-center gap-2 no-underline">
-                    <span className="text-2xl sm:text-3xl font-bold text-white no-underline">70+</span>
-                    <span className="text-white font-medium no-underline">AI Models</span>
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">70+</span>
+                    <span className="text-white font-medium whitespace-nowrap">AI Models</span>
                   </div>
-                  <div className="flex items-center gap-2 no-underline">
-                    <span className="text-2xl sm:text-3xl font-bold text-white no-underline">92.7%</span>
-                    <span className="text-white font-medium no-underline">Accuracy</span>
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">92.7%</span>
+                    <span className="text-white font-medium whitespace-nowrap">Accuracy</span>
                   </div>
                 </div>
               </motion.div>
@@ -188,7 +188,7 @@ const Hero = () => {
         {/* Slide 3 - Internship Opportunities */}
         <div className={`frame frame_3 absolute inset-0 transition-opacity duration-700 ${currentSlide === 3 ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}>
           <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-orange-500 via-red-500 to-pink-600">
-            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 sm:pt-24 pb-24 sm:pb-32 text-center">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 sm:py-16 text-center">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -200,11 +200,11 @@ const Hero = () => {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
-                  className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-full text-xs sm:text-sm font-medium mb-6 sm:mb-8"
+                  className="inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 sm:py-2.5 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-full text-xs sm:text-sm font-medium mb-6 sm:mb-8 flex-wrap justify-center mt-4 sm:mt-6"
                 >
-                  <span className="px-1.5 sm:px-2 py-0.5 bg-white text-dark-900 rounded-full text-[10px] sm:text-xs font-bold">🚀 Hiring</span>
-                  <span className="hidden sm:inline">Internship Opportunities</span>
-                  <span className="sm:hidden">Join Us</span>
+                  <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-white text-dark-900 rounded-full text-[11px] sm:text-xs font-bold whitespace-nowrap">🚀 Hiring</span>
+                  <span className="hidden sm:inline whitespace-nowrap">Internship Opportunities</span>
+                  <span className="sm:hidden whitespace-nowrap">Join Us</span>
                 </motion.div>
 
                 {/* Main Heading */}
@@ -216,19 +216,22 @@ const Hero = () => {
                 </h1>
 
                 {/* Subheading */}
-                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4 drop-shadow">
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 mb-10 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-4 drop-shadow">
                   Join AI Quantalytics and gain hands-on experience with cutting-edge technologies. Work on real projects, learn from industry experts, and kickstart your career!
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-10">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center items-center mb-12 sm:mb-16">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => {
-                      window.location.href = '/careers'
+                      const element = document.querySelector('#registration')
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                      }
                     }}
-                    className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-10 py-3 sm:py-4 bg-white text-dark-900 text-base sm:text-lg font-semibold rounded-full hover:bg-gray-100 transition-all shadow-xl cursor-pointer"
+                    className="inline-flex items-center gap-2 sm:gap-3 px-8 sm:px-12 py-4 sm:py-5 bg-white text-dark-900 text-base sm:text-lg font-semibold rounded-full hover:bg-gray-100 transition-all shadow-xl cursor-pointer"
                   >
                     Apply Now
                     <HiArrowRight className="text-lg sm:text-2xl" />
@@ -243,36 +246,33 @@ const Hero = () => {
                         element.scrollIntoView({ behavior: 'smooth', block: 'start' })
                       }
                     }}
-                    className="relative inline-flex items-center gap-2 px-6 sm:px-8 py-3 bg-white/10 backdrop-blur-sm border-2 border-white text-white text-base font-semibold rounded-full hover:bg-white/20 transition-all cursor-pointer"
+                    className="inline-flex items-center gap-2 px-8 sm:px-12 py-4 sm:py-5 bg-white/10 backdrop-blur-sm border-2 border-white text-white text-base sm:text-lg font-semibold rounded-full hover:bg-white/20 transition-all cursor-pointer"
                   >
-                    <span className="relative inline-block">
-                      Learn More
-                      <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-white"></span>
-                    </span>
+                    Learn More
                   </motion.button>
                 </div>
 
                 {/* Internship Benefits */}
-                <div className="flex flex-wrap justify-center gap-8 sm:gap-12 md:gap-16 mt-4 mb-12 sm:mb-16 text-base sm:text-lg text-white px-4">
-                  <div className="flex items-center gap-2 no-underline">
-                    <span className="text-2xl sm:text-3xl font-bold text-white no-underline">1000+</span>
-                    <span className="text-white font-medium no-underline">Problem Statements</span>
+                <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-10 lg:gap-12 mt-10 sm:mt-12 text-white px-4" data-nosnippet="true">
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-3xl sm:text-4xl font-bold text-white">1000+</span>
+                    <span className="text-white font-medium text-sm sm:text-base whitespace-nowrap">Problem Statements</span>
                   </div>
-                  <div className="flex items-center gap-2 no-underline">
-                    <span className="text-xl sm:text-2xl font-bold text-white no-underline">✓</span>
-                    <span className="text-white font-medium no-underline">Industry Mentorship</span>
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">✓</span>
+                    <span className="text-white font-medium text-sm sm:text-base whitespace-nowrap">Industry Mentorship</span>
                   </div>
-                  <div className="flex items-center gap-2 no-underline">
-                    <span className="text-xl sm:text-2xl font-bold text-white no-underline">✓</span>
-                    <span className="text-white font-medium no-underline">Onsite Internship</span>
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">✓</span>
+                    <span className="text-white font-medium text-sm sm:text-base whitespace-nowrap">Onsite Internship</span>
                   </div>
-                  <div className="flex items-center gap-2 no-underline">
-                    <span className="text-xl sm:text-2xl font-bold text-white no-underline">✓</span>
-                    <span className="text-white font-medium no-underline">Certificate</span>
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">✓</span>
+                    <span className="text-white font-medium text-sm sm:text-base whitespace-nowrap">Certificate</span>
                   </div>
-                  <div className="flex items-center gap-2 no-underline">
-                    <span className="text-xl sm:text-2xl font-bold text-white no-underline">✓</span>
-                    <span className="text-white font-medium no-underline">Placement Assistance</span>
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">✓</span>
+                    <span className="text-white font-medium text-sm sm:text-base whitespace-nowrap">Placement Assistance</span>
                   </div>
                 </div>
               </motion.div>

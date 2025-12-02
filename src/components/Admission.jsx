@@ -34,10 +34,10 @@ const Admission = () => {
   }
 
   // Google Form URL for course registration
-  const googleFormUrl = 'https://forms.gle/SHw6nhoP8AFoUWeWA'
+  const googleFormUrl = 'https://forms.gle/SHw6nhoP8AFoUWeWA'                                                                                                                                                                                                                                                             
 
   return (
-    <section id="admission" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-gray-50 to-white">
+    <section id="registration" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -67,7 +67,7 @@ const Admission = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-12 max-w-6xl mx-auto"
         >
-          <h3 className="text-2xl font-bold text-dark-900 mb-6 text-center">Available Industry Internship && Courses</h3>
+          <h3 className="text-2xl font-bold text-dark-900 mb-6 text-center">Available Courses</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {courses.map((course, index) => (
               <motion.div
@@ -196,9 +196,9 @@ const Admission = () => {
           className="grid sm:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto"
         >
           {[
-            { number: '15+', label: 'Courses Available' },
-            { number: '22+', label: 'University Partners' },
-            { number: '1000+', label: 'Students Trained' },
+            { number: '20+', label: 'Courses Available' },
+            { number: '100+', label: 'University Partners' },
+            { number: '200000+', label: 'Data Processed' },
           ].map((stat, index) => (
             <div key={index} className="text-center p-4 bg-white rounded-xl shadow-sm">
               <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#1f4037] to-[#99f2c8] bg-clip-text text-transparent mb-2">

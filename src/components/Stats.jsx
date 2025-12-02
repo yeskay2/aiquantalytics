@@ -9,10 +9,10 @@ const Stats = () => {
   })
 
   const stats = [
-    { target: 11500, label: 'Working Hours', suffix: '+' },
+    { target: 20500, label: 'Working Hours', suffix: '+' },
     { target: 203, label: 'Projects Completed', suffix: '+' },
-    { target: 75, label: 'Happy Clients', suffix: '+' },
-    { target: 15, label: 'Awards Received', suffix: '+' },
+    { target: 90, label: 'Happy Clients', suffix: '+' },
+    { target: 25, label: 'Awards Received', suffix: '+' },
   ]
 
   const [counts, setCounts] = useState(stats.map(() => 0))

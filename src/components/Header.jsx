@@ -25,9 +25,9 @@ const Header = () => {
     { name: 'About', path: '/', hash: '#about' },
     { name: 'Services', path: '/', hash: '#services' },
     { name: 'Products', path: '/', hash: '#products' },
-    { name: 'Admission', path: '/', hash: '#admission' },
+    { name: 'Admission', path: '/', hash: '#registration' },
     { name: 'Team', path: '/', hash: '#team' },
-    { name: 'Careers', path: '/careers', hash: '' },
+    { name: 'Registration', path: '/', hash: '#registration' },
     { name: 'Contact', path: '/', hash: '#contact' },
     { name: 'FAQ', path: '/', hash: '#faq' },
   ]
@@ -69,22 +69,13 @@ const Header = () => {
           <ul className="hidden lg:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
             {navLinks.map((link) => (
               <li key={link.name}>
-                {link.path === '/careers' ? (
-                  <Link
-                    to={link.path}
-                    className="text-[15px] text-gray-700 hover:text-[#1f4037] transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                ) : (
-                  <Link
-                    to={link.path + link.hash}
-                    onClick={() => handleNavClick(link.hash)}
-                    className="text-[15px] text-gray-700 hover:text-[#1f4037] transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                )}
+                <Link
+                  to={link.path + link.hash}
+                  onClick={() => handleNavClick(link.hash)}
+                  className="text-[15px] text-gray-700 hover:text-[#1f4037] transition-colors"
+                >
+                  {link.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -113,22 +104,13 @@ const Header = () => {
               <div className="py-6 space-y-4">
                 {navLinks.map((link) => (
                   <div key={link.name}>
-                    {link.path === '/careers' ? (
-                      <Link
-                        to={link.path}
-                        className="block text-[15px] text-gray-700 hover:text-dark-900 transition-colors py-2"
-                      >
-                        {link.name}
-                      </Link>
-                    ) : (
-                      <Link
-                        to={link.path + link.hash}
-                        onClick={() => handleNavClick(link.hash)}
-                        className="block text-[15px] text-gray-700 hover:text-dark-900 transition-colors py-2"
-                      >
-                        {link.name}
-                      </Link>
-                    )}
+                    <Link
+                      to={link.path + link.hash}
+                      onClick={() => handleNavClick(link.hash)}
+                      className="block text-[15px] text-gray-700 hover:text-dark-900 transition-colors py-2"
+                    >
+                      {link.name}
+                    </Link>
                   </div>
                 ))}
               </div>

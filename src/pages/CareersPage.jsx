@@ -100,9 +100,9 @@ const CareersPage = () => {
   return (
     <main id="main-content" className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center bg-gradient-to-br from-[#1f4037] to-[#99f2c8] overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-[#1f4037] to-[#99f2c8] overflow-hidden">
 
-        <div className="section-container relative z-10 pt-32 pb-20">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 sm:py-24">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -148,7 +148,7 @@ const CareersPage = () => {
 
           {/* Form */}
           <div className="max-w-3xl mx-auto">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
               {/* Name */}
               <div>
                 <label className="block text-sm font-medium text-dark-700 mb-2">Full Name *</label>
@@ -158,7 +158,7 @@ const CareersPage = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#99f2c8] focus:border-transparent transition-all"
                   placeholder="John Doe"
                 />
               </div>
@@ -226,8 +226,8 @@ const CareersPage = () => {
 
               {/* Position Selection */}
               <div>
-                <label className="block text-sm font-medium text-dark-700 mb-3">Apply For Which Post? *</label>
-                <div className="grid sm:grid-cols-2 gap-3">
+                <label className="block text-sm font-medium text-dark-700 mb-4">Apply For Which Post? *</label>
+                <div className="grid sm:grid-cols-2 gap-4">
                   {positions.map((position) => (
                     <label
                       key={position}
@@ -260,7 +260,7 @@ const CareersPage = () => {
                   onChange={handleChange}
                   required
                   rows="5"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#99f2c8] focus:border-transparent transition-all resize-none"
                   placeholder="Tell us about your skills, experience, and why you'd be a great fit..."
                 ></textarea>
               </div>
@@ -268,16 +268,21 @@ const CareersPage = () => {
               {/* Resume Upload */}
               <div>
                 <label className="block text-sm font-medium text-dark-700 mb-2">Upload Your Resume *</label>
-                <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center hover:border-primary-500 transition-all">
-                  <input
-                    type="file"
-                    name="resume"
-                    onChange={handleFileChange}
-                    accept=".doc,.docx,.pdf"
-                    required
-                    className="w-full"
-                  />
-                  <p className="text-sm text-dark-600 mt-2">Accepted formats: PDF, DOC, DOCX</p>
+                <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 sm:p-10 text-center hover:border-[#99f2c8] transition-all">
+                  <div className="flex flex-col items-center justify-center">
+                    <svg className="w-12 h-12 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    <input
+                      type="file"
+                      name="resume"
+                      onChange={handleFileChange}
+                      accept=".doc,.docx,.pdf"
+                      required
+                      className="w-full max-w-xs mb-2 text-sm text-dark-600 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-[#99f2c8] file:text-[#1f4037] hover:file:bg-[#1f4037] hover:file:text-white file:cursor-pointer file:transition-all"
+                    />
+                    <p className="text-sm text-dark-600 mt-2">Accepted formats: PDF, DOC, DOCX</p>
+                  </div>
                 </div>
               </div>
 

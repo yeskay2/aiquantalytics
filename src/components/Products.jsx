@@ -18,7 +18,7 @@ const Products = () => {
     },
     {
       icon: HiViewGrid,
-      title: 'Ziffy Cloud',
+      title: 'Thalam Platform',
       description: 'Project management software for agile teams that turns chaos into clarity.',
       color: 'from-[#99f2c8] to-[#1f4037]'
     },

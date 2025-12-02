@@ -11,14 +11,24 @@ const Services = () => {
 
   const services = [
     {
-      icon: HiLightningBolt,
-      title: 'Technology Consulting & IT Services',
-      description: 'Expert guidance and comprehensive IT services to harness the power of technology. From strategic planning to system integration and IT support.',
+      icon: HiChip,
+      title: 'AIML, GenAI & Business Intelligence',
+      description: 'Custom chatbots, generative AI, LLMs, data science solutions, and intelligent automation systems for business optimization.',
     },
     {
       icon: HiCode,
       title: 'Product & Software Development',
       description: 'Transform innovative ideas into cutting-edge products. From mobile apps to complex enterprise systems and digital products.',
+    },
+    {
+      icon: HiAcademicCap,
+      title: 'Corporate Training & Development',
+      description: 'Top-notch corporate training across all technology domains. Over 50 programs completed with 22 university partnerships.',
+    },
+    {
+      icon: HiLightningBolt,
+      title: 'Technology Consulting & IT Services',
+      description: 'Expert guidance and comprehensive IT services to harness the power of technology. From strategic planning to system integration and IT support.',
     },
     {
       icon: HiCloud,
@@ -30,16 +40,8 @@ const Services = () => {
       title: 'Cybersecurity & Digital Transformation',
       description: 'Safeguarding digital assets while revolutionizing business processes with advanced security protocols and threat mitigation.',
     },
-    {
-      icon: HiChip,
-      title: 'AI & Business Intelligence',
-      description: 'Custom chatbots, generative AI, LLMs, data science solutions, and intelligent automation systems for business optimization.',
-    },
-    {
-      icon: HiAcademicCap,
-      title: 'Corporate Training & Development',
-      description: 'Top-notch corporate training across all technology domains. Over 50 programs completed with 22 university partnerships.',
-    },
+    
+    
   ]
 
   return (

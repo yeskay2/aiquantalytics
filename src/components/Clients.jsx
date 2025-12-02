@@ -60,7 +60,7 @@ const Clients = () => {
 
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={40}
+          spaceBetween={32}
           slidesPerView={3}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           loop={true}
@@ -72,11 +72,11 @@ const Clients = () => {
         >
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
-              <div className="flex items-center justify-center py-4 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+              <div className="flex items-center justify-center py-6 sm:py-8 lg:py-10 transition-all duration-300">
                 <img
                   src={client}
                   alt={`Client ${index + 1}`}
-                  className="w-20 h-20 object-contain"
+                  className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 object-contain"
                 />
               </div>
             </SwiperSlide>

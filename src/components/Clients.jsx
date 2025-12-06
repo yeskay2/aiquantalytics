@@ -14,7 +14,7 @@ const Clients = () => {
   const clients = [
     '/images/intellibi.png',
     '/images/fusionapps.png',
-    '/images/dex.jpeg',
+    '/images/Dex.jpeg',
     '/images/cit.png',
     '/images/easwari.png',
     '/images/gsu.png',
@@ -60,23 +60,28 @@ const Clients = () => {
 
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={32}
-          slidesPerView={3}
+          spaceBetween={16}
+          slidesPerView={2}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           loop={true}
           breakpoints={{
-            640: { slidesPerView: 4 },
-            768: { slidesPerView: 5 },
-            1024: { slidesPerView: 6 },
+            480: { slidesPerView: 3, spaceBetween: 24 },
+            640: { slidesPerView: 4, spaceBetween: 32 },
+            768: { slidesPerView: 5, spaceBetween: 32 },
+            1024: { slidesPerView: 6, spaceBetween: 32 },
           }}
         >
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
-              <div className="flex items-center justify-center py-6 sm:py-8 lg:py-10 transition-all duration-300">
+              <div className="flex items-center justify-center py-4 sm:py-6 lg:py-8 transition-all duration-300">
                 <img
                   src={client}
                   alt={`Client ${index + 1}`}
-                  className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 object-contain"
+                  className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 object-contain"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.target.style.display = 'none'
+                  }}
                 />
               </div>
             </SwiperSlide>

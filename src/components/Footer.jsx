@@ -92,41 +92,50 @@ const Footer = () => {
         </div>
 
         {/* Contact Info + Video */}
-        <div className="mt-1 pt-3 border-t border-dark-800 grid md:grid-cols-2 gap-10 md:gap-12 items-start md:items-center">
-          {/* Address */}
-          <div>
-            <h5 className="font-semibold text-sm text-white mb-2">Office Address</h5>
-            <a 
-              href="https://maps.app.goo.gl/q4bwzBpt3uskoTNU8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-gray-400 hover:text-[#99f2c8] transition-colors block"
-            >
-              AIQuantalytics<br />
-              78B Lakshmi Puram, 6th Street<br />
-              Masakalipalayam Road, Hopes College<br />
-              Peelamedu, 641004, Coimbatore, India
-            </a>
-          </div>
+        <div className="mt-12 sm:mt-16 pt-8 sm:pt-10 border-t border-dark-800">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
+            {/* Address Section */}
+            <div className="space-y-4 sm:space-y-5">
+              <h5 className="font-semibold text-base sm:text-lg text-white mb-4 sm:mb-5">Office Address</h5>
+              <div className="space-y-4 sm:space-y-5">
+                <a 
+                  href="https://maps.app.goo.gl/q4bwzBpt3uskoTNU8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm sm:text-base text-gray-400 hover:text-[#99f2c8] transition-colors block leading-relaxed"
+                >
+                  AIQuantalytics<br />
+                  78B Lakshmi Puram, 6th Street<br />
+                  Masakalipalayam Road, Hopes College<br />
+                  Peelamedu, 641004, Coimbatore, India
+                </a>
+                
+                <div className="space-y-2 sm:space-y-3 pt-2 sm:pt-3">
+                  <p className="text-sm sm:text-base text-gray-400">
+                    Phone: <a href="tel:+917010737331" className="hover:text-[#99f2c8] transition-colors text-white">+91-7010737331</a>
+                  </p>
+                  <p className="text-sm sm:text-base text-gray-400">
+                    Email: <a href="mailto:hr@aiquantalytics.in" className="hover:text-[#99f2c8] transition-colors text-white break-all">hr@aiquantalytics.in</a>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          {/* Office video */}
-          <div>
-            <h5 className="font-semibold text-sm text-white mb-2">Office Video</h5>
-            <div className="aspect-video rounded-xl overflow-hidden border border-dark-800/60 bg-black">
-              <iframe
-                src="https://www.youtube.com/embed/BYx63PKKPvg?si=9XpSHESwkrHCo7Sg"
-                title="Office video"
-                className="w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
+            {/* Office Video Section */}
+            <div className="space-y-4 sm:space-y-5">
+              <h5 className="font-semibold text-base sm:text-lg text-white mb-4 sm:mb-5">Office Video</h5>
+              <div className="aspect-video rounded-xl overflow-hidden border border-dark-800/60 bg-black shadow-lg">
+                <iframe
+                  src="https://www.youtube.com/embed/BYx63PKKPvg?si=9XpSHESwkrHCo7Sg"
+                  title="Office video"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="mt-1 text-sm text-gray-400">
-          <p>Phone: <a href="tel:+917010737331" className="hover:text-[#99f2c8] transition-colors">+91-7010737331</a></p>
-          <p>Email: <a href="mailto:hr@aiquantalytics.in" className="hover:text-[#99f2c8] transition-colors">hr@aiquantalytics.in</a></p>
         </div>
       </div>
 

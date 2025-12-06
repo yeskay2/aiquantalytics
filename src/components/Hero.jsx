@@ -201,7 +201,7 @@ const Hero = () => {
                     className="hidden sm:block mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-white/20 lg:-ml-4"
                   >
                     <p className="text-white/60 text-xs sm:text-sm font-medium mb-3 sm:mb-4 text-center lg:text-left">Trusted by leading institutions</p>
-                    <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4">
+                    <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap">
                       {clientLogos.map((logo, index) => (
                         <motion.img
                           key={index}
@@ -211,6 +211,10 @@ const Hero = () => {
                           src={logo}
                           alt={`Client ${index + 1}`}
                           className="h-8 sm:h-10 md:h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                          loading="lazy"
+                          onError={(e) => {
+                            e.target.style.display = 'none'
+                          }}
                         />
                       ))}
                     </div>

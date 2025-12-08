@@ -150,15 +150,17 @@ const Contact = () => {
             </div>
 
             {/* Map */}
-            <div className="rounded-2xl overflow-hidden h-64 border border-gray-200">
+            <div className="rounded-2xl overflow-hidden h-64 sm:h-80 border border-gray-200 shadow-lg">
               <iframe
-                src="https://maps.google.com/maps?q=78B%20Lakshmi%20Puram%2C%206th%20Street%2C%20Masakalipalayam%20Road%2C%20Hopes%20College%2C%20Peelamedu%20641004&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=78B+Lakshmi+Puram,+6th+Street,+Masakalipalayam+Road,+Hopes+College,+Peelamedu+641004&output=embed&z=15"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
-                allowFullScreen
+                allowFullScreen={true}
                 loading="lazy"
-                title="Location Map"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="AIQuantalytics Office Location"
+                aria-label="Map showing AIQuantalytics office location at 78B Lakshmi Puram, 6th Street, Masakalipalayam Road, Hopes College, Peelamedu 641004"
               ></iframe>
             </div>
           </motion.div>

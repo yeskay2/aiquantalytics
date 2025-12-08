@@ -273,15 +273,15 @@ const CareersPage = () => {
                     <svg className="w-12 h-12 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                     </svg>
-                    <input
-                      type="file"
-                      name="resume"
-                      onChange={handleFileChange}
-                      accept=".doc,.docx,.pdf"
-                      required
+                  <input
+                    type="file"
+                    name="resume"
+                    onChange={handleFileChange}
+                    accept=".doc,.docx,.pdf"
+                    required
                       className="w-full max-w-xs mb-2 text-sm text-dark-600 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-[#99f2c8] file:text-[#1f4037] hover:file:bg-[#1f4037] hover:file:text-white file:cursor-pointer file:transition-all"
-                    />
-                    <p className="text-sm text-dark-600 mt-2">Accepted formats: PDF, DOC, DOCX</p>
+                  />
+                  <p className="text-sm text-dark-600 mt-2">Accepted formats: PDF, DOC, DOCX</p>
                   </div>
                 </div>
               </div>

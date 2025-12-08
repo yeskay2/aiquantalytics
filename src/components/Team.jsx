@@ -122,8 +122,8 @@ const Team = () => {
                 </p>
                 {member.subtitle && (
                   <p className="text-[10px] sm:text-xs text-dark-500 uppercase tracking-widest font-medium mt-1">
-                    {member.subtitle}
-                  </p>
+                  {member.subtitle}
+                </p>
                 )}
               </div>
             </motion.div>
